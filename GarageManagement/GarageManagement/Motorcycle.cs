@@ -16,7 +16,7 @@ namespace GarageManagement
 
         }
 
-        public Motorcycle(int registrationNumber, string color, int number_Of_Wheels, string modelType, float cylinder_Volume):base(registrationNumber, color, number_Of_Wheels, modelType)
+        public Motorcycle(string registrationNumber, string color, int number_Of_Wheels, string modelType, float cylinder_Volume):base(registrationNumber, color, number_Of_Wheels, modelType)
         {
             Cylinder_Volume = cylinder_Volume;
         }

@@ -14,7 +14,7 @@ namespace GarageManagement
         {
 
         }
-        public Car(int registrationNumber, string color, int number_Of_Wheels, string modelType, string fuelType):base(registrationNumber, color, number_Of_Wheels, modelType)
+        public Car(string registrationNumber, string color, int number_Of_Wheels, string modelType, string fuelType):base(registrationNumber, color, number_Of_Wheels, modelType)
         {
             FuelType = fuelType;
         }

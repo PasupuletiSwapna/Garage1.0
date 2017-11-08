@@ -14,7 +14,7 @@ namespace GarageManagement
         {
 
         }
-        public Bus(int registrationNumber, string color, int number_Of_Wheels, string modelType, int number_Of_Seats) : base(registrationNumber, color, number_Of_Wheels, modelType)
+        public Bus(string registrationNumber, string color, int number_Of_Wheels, string modelType, int number_Of_Seats) : base(registrationNumber, color, number_Of_Wheels, modelType)
         {
             Number_Of_Seats = number_Of_Seats;
         }

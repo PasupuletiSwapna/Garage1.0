@@ -14,7 +14,7 @@ namespace GarageManagement
         {
 
         }
-        public Boat(int registrationNumber, string color, int number_Of_Wheels, string modelType, int length):base(registrationNumber,color,number_Of_Wheels,modelType)
+        public Boat(string registrationNumber, string color, int number_Of_Wheels, string modelType, int length):base(registrationNumber,color,number_Of_Wheels,modelType)
         {
             Length = length;
         }
