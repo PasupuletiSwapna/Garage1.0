@@ -16,7 +16,7 @@ namespace GarageManagement
             set { FuelType = value; }
         }
 
-        public Car(int reg, string col, int now, int tof, string fut) : base(reg, col, now, tof)
+        public Car(int reg, string col, int now, string tof, string fut) : base(reg, col, now, tof)
         {
             FuelType = fut;
         }

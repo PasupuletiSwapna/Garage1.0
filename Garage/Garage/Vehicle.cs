@@ -29,8 +29,10 @@ namespace GarageManagement
             set { noOfWheels = value; }
         }
 
-        private int typeofmodel;
-        public int TypeofModel
+        private string typeofmodel;
+        internal int id;
+
+        public string TypeofModel
         {
             get { return typeofmodel; }
             set { typeofmodel = value; }
@@ -40,18 +42,22 @@ namespace GarageManagement
         public Vehicle()
         { }
 
-        public Vehicle(int reg, string col, int now, int tof)
+        public Vehicle(int regnum, string color, int noOfWheels, string typeofmodel)
         {
-            RegNum = reg;
-            Color = col;
-            NoOfWheels = now;
-            TypeofModel = tof;
+            RegNum = regnum;
+            Color = color;
+            NoOfWheels = noOfWheels;
+            TypeofModel = typeofmodel;
+            
+
         }
+
+
 
         public virtual string PrintVehicle()
         {
-            return "\n Register Number of the"+GetType().Name+"is--" +RegNum+ "\n The color of this vehicle is--"+Color+
-                   "\n And Its a" +NoOfWheels+ " vehicle.."+"\n Its a "+TypeofModel+ "model" ;
+            return "\n Register Number of the" + GetType().Name + "is--" + RegNum + "\n The color of this vehicle is--" + Color +
+                   "\n And Its a" + NoOfWheels + " vehicle.." + "\n Its a " + TypeofModel + "model";
         }
 
 

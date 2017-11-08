@@ -17,14 +17,14 @@ namespace GarageManagement
             set { NoOfSeats = value; }
         }
 
-        public Bus(int reg, string col, int now, int tof, int nos) : base(reg, col, now, tof)
+        public Bus(int reg, string col, int now, string tof, int nos) : base(reg, col, now, tof)
         {
             NoOfSeats = nos;
         }
 
         public override string PrintVehicle()
         {
-            return base.PrintVehicle() + "\n The Bus contains" + NoOfSeats+ "seats\n";
+            return base.PrintVehicle() + "\n The Bus contains" + NoOfSeats + "seats\n";
         }
 
 

@@ -12,7 +12,7 @@ namespace GarageManagement
         private int length;
         public int Length;
 
-        public Boat(int reg, string col, int now, int tof, int len) : base(reg, col, now, tof)
+        public Boat(int reg, string col, int now, string tof, int len) : base(reg, col, now, tof)
         {
             RegNum += reg;
             Length = len;
@@ -20,7 +20,7 @@ namespace GarageManagement
 
         public override string PrintVehicle()
         {
-            return base.PrintVehicle()+"\n The Length Of the Boat is"+Length;
+            return base.PrintVehicle() + "\n The Length Of the Boat is" + Length;
         }
 
 

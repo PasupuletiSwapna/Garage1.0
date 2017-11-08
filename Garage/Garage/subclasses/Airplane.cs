@@ -16,7 +16,7 @@ namespace GarageManagement
             set { NoOfEngines = value; }
         }
 
-        public Airplane(int reg, string col, int now, int tof, int noe) : base(reg, col, now, tof)
+        public Airplane(int reg, string col, int now, string tof, int noe) : base(reg, col, now, tof)
         {
             NoOfEngines = noe;
         }
@@ -24,7 +24,7 @@ namespace GarageManagement
 
         public override string PrintVehicle()
         {
-            return base.PrintVehicle() + "\n The" + GetType().Name + "contains"  + NoOfEngines + " Engines "  ;
+            return base.PrintVehicle() + "\n The" + GetType().Name + "contains" + NoOfEngines + " Engines ";
         }
 
     }
